@@ -4,12 +4,12 @@ from selenium.webdriver.chrome.service import Service
 import time
 
 opts = Options()
-chromium_path = 'C:\\Users\\domin\\chrome-win\\chrome.exe'
+chromium_path = "C:\\Users\\domin\\chrome-win\\chrome.exe"
 opts.binary_location = chromium_path
 chromedriver_path = Service("C:\\Users\\domin\\chromedriver_win32\\chromedriver.exe")
 # driver = webdriver.Chrome(executable_path=chromedriver_path, chrome_options=opts)
 driver = webdriver.Chrome(service=chromedriver_path, options=opts)
-driver.get('https://datasciencecampus.ons.gov.uk')
+driver.get("https://unstats.un.org/bigdata/regional-hubs.cshtml")
 
 time.sleep(5)
 
