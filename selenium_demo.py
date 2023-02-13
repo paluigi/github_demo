@@ -12,7 +12,7 @@ driver = webdriver.Chrome(service=chromedriver_path, options=opts)
 driver.get("https://unstats.un.org/bigdata/regional-hubs.cshtml")
 
 time.sleep(5)
-
+# close the browser/driver
 driver.quit()
 
 # C:\Users\domin\AppData\Local\Temp\ipykernel_21716\3316448015.py:5: DeprecationWarning: executable_path has been deprecated, please pass in a Service object
